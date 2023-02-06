@@ -1,265 +1,262 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    height: 80px;
-    width: 100%;
+  height: 80px;
+  width: 100%;
 }
 
 body {
-    Font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  text-align: end;
+  /* object-fit: cover; */
 }
 
 p {
-    color: hsl(0, 0%, 75%);
-    line-height: 1.5;
+  color: hsl(0, 0%, 75%);
+  line-height: 1.5;
 }
 
 button {
-    cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
-    border: none;
-    outline: none;
-    color: #FFFAFF;
+  cursor: pointer;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  outline: none;
+  color: #fffaff;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
 }
 
 .sections-style {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .margin-btm {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .margin-btm-small {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .margin-btm-n-top-mid {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .margin-top {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .pad-top {
-    padding-top: 8rem;
+  padding-top: 8rem;
 }
 
 .header-container {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-
-
-
 
 /* HAMBURGER STYLES */
 .ham-btn {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .hamburger {
-    position: relative;
-    width: 25px;
-    height: 2px;
-    background-color: hsl(0, 0%, 75%);
-    transition: transform .25s ease;
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: hsl(0, 0%, 75%);
+  transition: transform 0.25s ease;
 }
 
-
-.hamburger::before, .hamburger::after {
-    position: absolute;
-    content: "";
-    top: -6px;
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: hsl(0, 0%, 75%);
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+  content: "";
+  top: -6px;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: hsl(0, 0%, 75%);
 }
 
 .hamburger::after {
-    top: 6px;
-    right: 0;
+  top: 6px;
+  right: 0;
 }
 
 .on-click .hamburger {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .on-click .hamburger::before {
-    transform: rotate(-90deg) translateY(6px);
-
+  transform: rotate(-90deg) translateY(6px);
 }
-
 
 .on-click .hamburger::after {
-    transform: rotate(90deg) translateY(6px);
+  transform: rotate(90deg) translateY(6px);
 }
-
-
-
-
-
 
 .heading {
-    font-size: 2.5rem; 
-    font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
-
-
-
-
 
 /* BTN STYLES */
 .get-started-btn {
-    padding: .8rem 2.5rem;
-    font-size: 1.2rem;
-    border-radius: 40px;
-    font-weight: 700;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  font-weight: 700;
 }
-
 
 /* Main styles */
 
-.main-content {
-    position: relative;
-    background-color: hsl(260, 8%, 93%);
-    padding-bottom: 2rem;
+.media {
+  width: 95%;
+  margin-left: auto;
 }
 
+.main-content {
+  position: relative;
+  background-color: hsl(260, 8%, 93%);
+  padding-bottom: 2rem;
+}
 
 .shorten {
-    position: absolute;
-    top: -75px;
-    left: 5%;
-    background: no-repeat right top url(./images/bg-shorten-mobile.svg);
-    background-color: hsl(257, 27%, 26%);
-    height: 150px;
-    border-radius: 10px;
-    padding: 1.5rem;
+  position: absolute;
+  top: -75px;
+  left: 5%;
+  background: no-repeat right top url(./images/bg-shorten-mobile.svg);
+  background-color: hsl(257, 27%, 26%);
+  height: 150px;
+  border-radius: 10px;
+  padding: 1.5rem;
 }
 
-.shorten button, input {
-    padding: .8rem 2.5rem;
-    margin: .5rem 0;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+.shorten button,
+input {
+  padding: 0.8rem 2.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .shorten-lay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .card {
-    position: relative;
-    background-color: #FFFAFF;
-    margin: 6rem 0;
-    padding: 4.5rem 1.5rem 2rem 1.5rem;
-    border-radius: 5px;
+  position: relative;
+  background-color: #fffaff;
+  margin: 6rem 0;
+  padding: 4.5rem 0.8rem 2rem 0.8rem;
+  border-radius: 5px;
 }
 
 .unique-cards {
-    position: relative;
+  position: relative;
 }
 
 .unique-cards::after {
-    position: absolute;
-    content: '';
-    width: 2%;
-    height: 55px;
-    display: block;
-    left: 47.5%;
-    translate: 40%;
-    bottom: -55px;
-    background-color: hsl(180, 66%, 49%);
+  position: absolute;
+  content: "";
+  width: 2%;
+  height: 55px;
+  display: block;
+  left: 47.5%;
+  translate: 40%;
+  bottom: -55px;
+  background-color: hsl(180, 66%, 49%);
 }
 
-
-
 .cons {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    top: -40px;
-    border-radius: 50%;
-    left: 37.5%;
-    background-color: hsl(260, 8%, 14%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  border-radius: 50%;
+  left: 37.5%;
+  background-color: hsl(260, 8%, 14%);
 }
 
 .cons img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .boost-links {
-    background: url(./images/bg-boost-mobile.svg);
-    background-color: hsl(257, 27%, 26%);
-    margin: auto;
-    height: 250px;
-    padding: 100px 0;
-
-
+  background: url(./images/bg-boost-mobile.svg);
+  background-color: hsl(257, 27%, 26%);
+  margin: auto;
+  height: 250px;
+  padding: 100px 0;
 }
 
 .boost-btn {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .boost-text {
-    color: #FFFAFF;
+  color: #fffaff;
 }
 
 .footer-bg {
-    background-color: hsl(255, 11%, 22%);
-    padding-top: 4rem;
-
+  background-color: hsl(255, 11%, 22%);
+  padding-top: 4rem;
 }
 
-.footer-bg h2, h5 {
-    color: #FFFAFF;
+.footer-bg h2,
+h5 {
+  color: #fffaff;
 }
 
 .shortly {
-    margin-bottom: 4.5rem;
+  margin-bottom: 4.5rem;
+  font-size: 2rem;
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
-    color: #FFFAFF;
-    padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  color: #fffaff;
+  padding-bottom: 3rem;
 }
 
 .socials i {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
