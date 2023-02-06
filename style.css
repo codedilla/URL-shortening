@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+}
+
+body {
+    Font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: hsl(0, 0%, 75%);
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    outline: none;
+    color: #FFFAFF;
+}
+
+.sections-style {
+    width: 90%;
+    margin: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-btm {
+    margin-bottom: 10rem;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+.pad-top {
+    padding-top: 8rem;
+}
+
+.header-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* HAMBURGER STYLES */
+.ham-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background-color: hsl(0, 0%, 75%);
+    transition: transform .25s ease;
+}
+
+
+.hamburger::before, .hamburger::after {
+    position: absolute;
+    content: "";
+    top: -6px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: hsl(0, 0%, 75%);
+}
+
+.hamburger::after {
+    top: 6px;
+    right: 0;
+}
+
+.on-click .hamburger {
+    transform: rotate(-45deg);
+}
+
+.on-click .hamburger::before {
+    transform: rotate(-90deg) translateY(6px);
+
+}
+
+
+.on-click .hamburger::after {
+    transform: rotate(90deg) translateY(6px);
+}
+
+
+
+
+
+
+.heading {
+    font-size: 2.5rem; 
+    font-weight: 700;
+}
+
+
+
+
+
+/* BTN STYLES */
+.get-started-btn {
+    padding: .8rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    font-weight: 700;
+}
+
+
+/* Main styles */
+
+.main-content {
+    position: relative;
+    background-color: hsl(260, 8%, 93%);
+    padding-bottom: 2rem;
+}
+
+
+.shorten {
+    position: absolute;
+    top: -75px;
+    left: 5%;
+    background: no-repeat right top url(./images/bg-shorten-mobile.svg);
+    background-color: hsl(255, 11%, 22%);
+    height: 150px;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.shorten button, input {
+    padding: .8rem 2.5rem;
+    margin: .5rem 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.shorten-lay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    background-color: #FFFAFF;
+    margin: 6rem 0;
+    padding: 6rem 1.5rem 2rem 1.5rem;
+    border-radius: 5px;
+}
+
+.cons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    border-radius: 50%;
+    left: 40%;
+    background-color: hsl(260, 8%, 14%);
+}
+
+.cons img {
+    width: 40px;
+    height: 40px;
+}
