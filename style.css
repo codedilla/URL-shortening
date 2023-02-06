@@ -12,6 +12,8 @@ header {
 body {
     Font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
 img {
@@ -21,6 +23,7 @@ img {
 
 p {
     color: hsl(0, 0%, 75%);
+    line-height: 1.5;
 }
 
 button {
@@ -44,6 +47,9 @@ button {
     margin-bottom: 10rem;
 }
 
+.margin-btm-small {
+    margin-bottom: .5rem;
+}
 
 .margin-btm-n-top-mid {
     margin: 1.5rem 0;
@@ -175,9 +181,27 @@ button {
     position: relative;
     background-color: #FFFAFF;
     margin: 6rem 0;
-    padding: 6rem 1.5rem 2rem 1.5rem;
+    padding: 4.5rem 1.5rem 2rem 1.5rem;
     border-radius: 5px;
 }
+
+.unique-cards {
+    position: relative;
+}
+
+.unique-cards::after {
+    position: absolute;
+    content: '';
+    width: 2%;
+    height: 55px;
+    display: block;
+    left: 47.5%;
+    translate: 40%;
+    bottom: -55px;
+    background-color: hsl(180, 66%, 49%);
+}
+
+
 
 .cons {
     position: absolute;
@@ -188,7 +212,7 @@ button {
     height: 80px;
     top: -40px;
     border-radius: 50%;
-    left: 37%;
+    left: 37.5%;
     background-color: hsl(260, 8%, 14%);
 }
 
@@ -227,4 +251,15 @@ button {
 
 .shortly {
     margin-bottom: 4.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    color: #FFFAFF;
+    padding-bottom: 3rem;
+}
+
+.socials i {
+    padding-left: 1rem;
 }
