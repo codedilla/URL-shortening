@@ -128,7 +128,50 @@ h5 {
   font-weight: 700;
 }
 
+/* Mobile Navigation style */
+.mobile-nav-common {
+  width: 80%;
+  margin: auto;
+}
+
+.mobile-nav {
+  position: fixed;
+  background-color: hsl(257, 27%, 26%);
+  transform: translate(6%);
+  padding: 1.7rem 0;
+  border-radius: 10px;
+}
+
+.mobile-nav li {
+  list-style: none;
+}
+
+.mobile-nav a {
+  color: #fffaff;
+  text-decoration: none;
+}
+
+.mobile-navigation {
+  border-bottom: 1px solid grey;
+}
+
+.registration {
+  color: #fffaff;
+}
+
 /* BTN STYLES */
+.sign-up-btn {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 30px;
+  font-size: 1.125rem;
+}
+
+.login-btn {
+  background-color: transparent;
+  font-size: 1.125rem;
+}
+
 .get-started-btn {
   padding: 0.8rem 2.5rem;
   font-size: 1.2rem;
