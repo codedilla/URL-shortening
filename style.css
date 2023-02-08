@@ -84,7 +84,6 @@ h5 {
 /* HAMBURGER STYLES */
 .ham-btn {
   width: 25px;
-  height: 25px;
   cursor: pointer;
 }
 
@@ -160,6 +159,14 @@ h5 {
 
 .registration {
   color: #fffaff;
+}
+
+.desk-nav {
+  display: none;
+}
+
+.desk-reg {
+  display: none;
 }
 
 /* BTN STYLES */
@@ -478,6 +485,10 @@ h5 {
 
   .boost-text {
     font-size: 2.5rem;
+  }
+
+  footer {
+    padding-bottom: 4rem;
   }
 
   .footer-content {
