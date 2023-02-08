@@ -11,6 +11,7 @@ header {
 
 body {
   font-size: 1.2rem;
+  background-color: #fffaff;
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
@@ -167,11 +168,13 @@ h5 {
   padding: 1rem 0;
   border-radius: 30px;
   font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .login-btn {
   background-color: transparent;
   font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .get-started-btn {
@@ -211,7 +214,7 @@ input {
   margin: 0.5rem 0;
   border: none;
   outline: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1.2rem;
 }
 
@@ -304,4 +307,181 @@ h5 {
 
 .socials i {
   padding-left: 1rem;
+}
+
+/* Media queries for desktop */
+@media (min-width: 43rem) {
+  .start-text {
+    text-align: start;
+  }
+
+  .pad-left {
+    padding-left: 1rem;
+  }
+
+  .logo {
+    margin-right: 2rem;
+  }
+
+  .logo-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .desk-nav {
+    display: flex;
+    list-style: none;
+  }
+
+  .desk-nav li a {
+    text-decoration: none;
+    padding-left: 32px;
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+  }
+
+  .desk-reg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sign-up-btn {
+    margin-left: 3rem;
+    height: 80%;
+    width: 200px;
+    font-weight: 700;
+  }
+
+  .ham-btn {
+    display: none;
+  }
+
+  .hero-section {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+  }
+
+  .heading {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  svg {
+    justify-content: end;
+    width: 600px;
+  }
+
+  .para {
+    font-size: 1.5rem;
+    padding-right: 10rem;
+  }
+
+  .shorten {
+    background: no-repeat center center / cover
+      url(./images/bg-shorten-desktop.svg);
+    background-color: hsl(257, 27%, 26%);
+  }
+
+  .shorten input {
+    display: block;
+    width: 70%;
+    margin-right: 2rem;
+  }
+
+  .shorten button {
+    width: 20%;
+  }
+
+  .login-btn {
+    color: hsl(0, 0%, 75%);
+  }
+
+  .shorten-lay {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .get-started-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .advanced {
+    font-size: 2.5rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 10%);
+    height: 500px;
+    margin-top: 6rem;
+    column-gap: 2rem;
+  }
+
+  .cards :nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 6;
+  }
+
+  .cards :nth-child(2) {
+    grid-column: 2;
+    grid-row: 2 / span 6;
+  }
+
+  .cards :nth-child(3) {
+    grid-column: 3;
+    grid-row: 3 / span 6;
+  }
+
+  .card {
+    margin: 0;
+    height: 100%;
+  }
+
+  .unique-cards::after {
+    width: 10%;
+    height: 10px;
+    top: 50%;
+    display: block;
+    left: 96%;
+  }
+
+  .cons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    border-radius: 50%;
+    left: 6%;
+    background-color: hsl(260, 8%, 14%);
+  }
+
+  .boost-links {
+    background: url(./images/bg-boost-desktop.svg);
+    background-color: hsl(257, 27%, 26%);
+    padding: 3.75rem 0;
+  }
+
+  .boost-text {
+    font-size: 2.5rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
