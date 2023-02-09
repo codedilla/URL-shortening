@@ -126,6 +126,8 @@ h5 {
 .heading {
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: 1.2;
+  margin-top: 1rem;
 }
 
 /* Mobile Navigation style */
@@ -196,6 +198,10 @@ h5 {
 .media {
   width: 95%;
   margin-left: auto;
+}
+
+svg {
+  display: none;
 }
 
 .main-content {
@@ -275,7 +281,7 @@ input {
 }
 
 .boost-links {
-  background: url(./images/bg-boost-mobile.svg);
+  background: no-repeat url(./images/bg-boost-mobile.svg);
   background-color: hsl(257, 27%, 26%);
   margin: auto;
   height: 250px;
@@ -383,8 +389,17 @@ h5 {
     font-weight: 700;
   }
 
+  .media-content {
+    width: 600px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
   svg {
     justify-content: end;
+    display: block;
     width: 600px;
   }
 
@@ -426,6 +441,12 @@ h5 {
 
   .advanced {
     font-size: 2.5rem;
+  }
+
+  .advanced-para {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: auto;
   }
 
   .cards {
